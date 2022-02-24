@@ -40,6 +40,11 @@ body {
   background-color: #fff4f3;
   animation: transitionIn 0.5s;
 }
+
+body.activeb{
+  overflow: hidden;
+}
+
 @keyframes transitionIn{
 	from {
 		opacity: 0;
