@@ -26,10 +26,12 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const showModal = (openButton, modalContent) =>{
     const openBtn = document.getElementById(openButton),
     modalContainer = document.getElementById(modalContent)
+	const body = document.querySelector("body")
     
     if(openBtn && modalContainer){
         openBtn.addEventListener('click', ()=>{
             modalContainer.classList.add('show-modal')
+			body.classList.add('activeb')
         })
     }
 }
@@ -37,9 +39,11 @@ showModal('open-modal','modal-container')
 
 /*=============== CLOSE MODAL ===============*/
 const closeBtn = document.querySelectorAll('.close-modal')
+const body = document.querySelector("body")
 
 function closeModal(){
     const modalContainer = document.getElementById('modal-container')
     modalContainer.classList.remove('show-modal')
+	body.classList.remove('activeb')
 }
 closeBtn.forEach(c => c.addEventListener('click', closeModal))
