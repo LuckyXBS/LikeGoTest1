@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="assets/img/logo.png">
+        <title>LikeGo - играть онлайн</title>
+    </head>
+    <body>
+        <header class="header">
+		
+            <a href="#" class="header__logo">LikeGo</a>
+	
+
+            <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+                    <a href="" class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="assets/img/logo.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <span class="nav__name">LikeGo</span>
+                        </div>
+                    </a>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
+							
+							<li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+    
+                            <li class="nav__item dropdown">
+                                <a href="#" class="nav__link dropdown__link">Игры <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                    
+    
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__item"><a href="dice.html" class="nav__link">Dice</a></li>
+                                    <li class="dropdown__item"><a href="#" class="nav__link">Скоро...</a></li>
+                                    <li class="dropdown__item"><a href="#" class="nav__link">Скоро...</a></li>
+                                </ul>
+                            </li>
+							
+							<li class="nav__item"><a href="" class="nav__link">Пополнение</a></li>
+							
+							<li class="nav__item"><a href="withdraw.html" class="nav__link">Вывод</a></li>
+							
+							<li class="nav__item"><a href="#" class="nav__link" id="open-modal">Войти</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+		
+		
+		<section class="modal container">
+            <div class="modal__container" id="modal-container">
+                <div class="modal__content">
+                    <div class="modal__close close-modal" title="Close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <h1 class="modal__title">Авторизация</h1>
+                    <div class="auth-modal">
+<form method="POST" action="/auth/login">
+<input type="hidden" name="_token" value="6FCyZygg9rdm3POwI0mUuu60YPIIUSvHChCZz9fc">
+<div class="group">
+<input name="name" required="" placeholder="Логин" type="text">
+</div>
+<div class="group">
+<input name="password" required="" placeholder="Пароль" type="password">
+</div>
+<div class="flex">
+<button type="submit" class="auth">
+Войти
+</button>
+<div class="social" onclick="window.location='https://vk.com'">
+<span>ИЛИ</span>
+<a class="vk">
+<svg><path d="M11.5 24h1c5.44 0 8.15 0 9.83-1.68C24 20.64 24 17.92 24 12.5v-1.02c0-5.4 0-8.12-1.67-9.8C20.65 0 17.93 0 12.5 0h-1C6.06 0 3.35 0 1.67 1.68 0 3.36 0 6.08 0 11.5v1.02c0 5.4 0 8.12 1.68 9.8C3.36 24 6.08 24 11.5 24z" fill="#07F"></path><path d="M12.77 17.29c-5.47 0-8.59-3.75-8.72-9.99h2.74c.09 4.58 2.11 6.52 3.71 6.92V7.3h2.58v3.95c1.58-.17 3.24-1.97 3.8-3.95h2.58a7.62 7.62 0 01-3.51 4.98 7.9 7.9 0 014.11 5.01h-2.84a4.94 4.94 0 00-4.14-3.57v3.57h-.31z" fill="#fff"></path></svg>
+</a>
+</div>
+</div>
+</form>
+<div class="description">
+Ещё нет аккаунта ?
+</div>
+<button class="warning">Создать аккаунт</button>
+</div>
+                </div>
+            </div>
+        </section>
+		
+		
+<section class="pay-section">
+
+<div class="pay">
+<div class="methods">
+<div class="title">Выберите метод оплаты</div>
+<div class="row">
+<div class="card  " data-system="fkwallet" style="position: relative">
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" aria-hidden="true" role="img" class="icon PaymentTile__icon icon icon-payment-fk-wallet sm icon-type-color icon" icon="payment/fk-wallet"><defs><linearGradient id="fk-wallet_svg__a" x1="8.408%" x2="77.524%" y1="-4.846%" y2="87.599%"><stop offset="0%" stop-color="#1C78FF"></stop><stop offset="100%" stop-color="#9815FF"></stop></linearGradient><linearGradient id="fk-wallet_svg__b" x1="19.763%" x2="101.543%" y1="-7.781%" y2="152.902%"><stop offset="0%" stop-color="#1C78FF"></stop><stop offset="100%" stop-color="#9815FF"></stop></linearGradient><linearGradient id="fk-wallet_svg__c" x1="15.605%" x2="152.23%" y1="33.669%" y2="98.518%"><stop offset="0%" stop-color="#1C78FF"></stop><stop offset="100%" stop-color="#9815FF"></stop></linearGradient></defs><path d="M15.418 10.223L22.61 0h-2.153c-1.053 0-2.047.507-2.632 1.342l-6.88 9.773c-.584.882-.945 1.342-.945 3.483V21h2.748v-9.115l5.604 7.97A2.75 2.75 0 0020.593 21H23l-7.582-10.777zM6.36 8H3.242C2.125 8 .008 11.101.008 13.778h.008a5.825 5.825 0 00-.016.384V21h2.692V10.859h-.09v-.01H6.36c.353 0 .64-.354.64-.788V8.788C7 8.354 6.713 8 6.36 8zM2.971 4.478v-.473c0-1.169.863-1.579 1.799-1.579v-.009h8.313C14.446 2.417 16 1.33 16 0H4.78C1.68 0 0 1.061 0 3.88V9v-.027c.1-.116 2.971-1.686 2.971-4.495z" fill="#FFF"></path><g fill="none" class="fk-wallet_svg__color"><path fill="url(#fk-wallet_svg__a)" d="M15.418 10.223L22.61 0h-2.153c-1.053 0-2.047.507-2.632 1.342l-6.88 9.773c-.584.882-.945 1.342-.945 3.483V21h2.748v-9.115l5.604 7.97A2.75 2.75 0 0020.593 21H23l-7.582-10.777z"></path><path fill="url(#fk-wallet_svg__b)" d="M6.36 8H3.242C2.125 8 .008 11.101.008 13.778h.008a5.825 5.825 0 00-.016.384V21h2.692V10.859h-.09v-.01H6.36c.353 0 .64-.354.64-.788V8.788C7 8.354 6.713 8 6.36 8z"></path><path fill="url(#fk-wallet_svg__c)" d="M2.971 4.478v-.473c0-1.169.863-1.579 1.799-1.579v-.009h8.313C14.446 2.417 16 1.33 16 0H4.78C1.68 0 0 1.061 0 3.88V9v-.027c.1-.116 2.971-1.686 2.971-4.495z"></path></g></svg>
+</div>
+<div class="card  active  " data-system="qiwi" style="position: relative">
+<svg viewBox="0 0 31 32" "23" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon PaymentTile__icon icon icon-payment-qiwi sm icon-type-mono icon PaymentTile__icon--active" icon="payment/qiwi"><path fill="#ff8c00" d="M14.24 0c7.85 0 14.238 6.345 14.238 14.236 0 2.672-.71 5.177-2.003 7.305-.043.085-.168.043-.168-.04-.501-3.508-2.63-5.47-5.762-6.013-.25-.04-.335-.208.041-.25.961-.084 2.338-.084 3.007.042.042-.333.042-.71.042-1.086a9.425 9.425 0 00-9.437-9.434 9.425 9.425 0 00-9.437 9.434 9.426 9.426 0 009.437 9.435h.46l-.065-.393a10.949 10.949 0 01-.103-2.153c.042-.585.168-.668.417-.209 1.295 2.253 3.174 4.3 6.807 5.094 2.964.666 5.971 1.46 9.187 5.51.292.333-.125.71-.46.417-3.298-2.922-6.264-3.84-8.976-3.84-3.049 0-5.096.418-7.226.418C6.39 28.473 0 22.084 0 14.236S6.347 0 14.24 0zm7.265 22.46c.335.043.71.167 1.002.418.626.542.836 1.168.501 1.628-.166.25-.501.376-.834.376-.376 0-.71-.125-.961-.334-.584-.502-.752-1.336-.375-1.796a.907.907 0 01.667-.292zm3.132-2.296c.542.209.752 1.002.793 1.377.084.628-.083.877-.292.877-.21 0-.501-.25-.793-.751-.334-.5-.417-1.044-.292-1.335.083-.21.333-.294.584-.167v-.001z" class="qiwi_svg__mono"></path><path fill="url(#qiwi_svg__a)" d="M14.24 0c7.85 0 14.238 6.345 14.238 14.236 0 2.672-.71 5.177-2.003 7.305-.043.085-.168.043-.168-.04-.501-3.508-2.63-5.47-5.762-6.013-.25-.04-.335-.208.041-.25.961-.084 2.338-.084 3.007.042.042-.333.042-.71.042-1.086a9.425 9.425 0 00-9.437-9.434 9.425 9.425 0 00-9.437 9.434 9.426 9.426 0 009.437 9.435h.46l-.065-.393a10.949 10.949 0 01-.103-2.153c.042-.585.168-.668.417-.209 1.295 2.253 3.174 4.3 6.807 5.094 2.964.666 5.971 1.46 9.187 5.51.292.333-.125.71-.46.417-3.298-2.922-6.264-3.84-8.976-3.84-3.049 0-5.096.418-7.226.418C6.39 28.473 0 22.084 0 14.236S6.347 0 14.24 0zm7.265 22.46c.335.043.71.167 1.002.418.626.542.836 1.168.501 1.628-.166.25-.501.376-.834.376-.376 0-.71-.125-.961-.334-.584-.502-.752-1.336-.375-1.796a.907.907 0 01.667-.292zm3.132-2.296c.542.209.752 1.002.793 1.377.084.628-.083.877-.292.877-.21 0-.501-.25-.793-.751-.334-.5-.417-1.044-.292-1.335.083-.21.333-.294.584-.167v-.001z" class="qiwi_svg__color"></path></svg>
+</div>
+</div>
+
+</div>
+<div class="info">
+<div class="group">
+<label>Сумма пополнения</label>
+<div class="input">
+<span><i class="far fa-wallet"></i></span>
+<input placeholder="0.00" class="amount">
+</div>
+</div>
+<button>Пополнить баланс</button>
+</div>
+</div>
+
+</section>
+		
+		<div class="footer" style="margin-top: 338px;">
+<div class="main">
+<span class="domain">
+LikeGo - 2022
+</span>
+<div class="menu">
+<a href="terms.html" class="">
+Пользовательское соглашение
+</a>
+<a href="policy.html" class="">
+ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+</a>
+<a href="https://vk.com/#">
+ТЕХНИЧЕСКАЯ ПОДДЕРЖКА
+</a>
+</div>
+</div>
+</div>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

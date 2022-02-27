@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="assets/img/logo.png">
+        <title>LikeGo - играть онлайн</title>
+    </head>
+    <body>
+        <header class="header">
+		
+            <a href="#" class="header__logo">LikeGo</a>
+	
+
+            <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+                    <a href="" class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="assets/img/logo.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <span class="nav__name">LikeGo</span>
+                        </div>
+                    </a>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
+							
+							<li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+    
+                            <li class="nav__item dropdown">
+                                <a href="#" class="nav__link dropdown__link">Игры <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                    
+    
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__item"><a href="dice.html" class="nav__link">Dice</a></li>
+                                    <li class="dropdown__item"><a href="#" class="nav__link">Скоро...</a></li>
+                                    <li class="dropdown__item"><a href="#" class="nav__link">Скоро...</a></li>
+                                </ul>
+                            </li>
+							
+							<li class="nav__item"><a href="" class="nav__link">Пополнение</a></li>
+							
+							<li class="nav__item"><a href="withdraw.html" class="nav__link">Вывод</a></li>
+							
+							<li class="nav__item"><a href="#" class="nav__link" id="open-modal">Войти</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+		
+		
+		<section class="modal container">
+            <div class="modal__container" id="modal-container">
+                <div class="modal__content">
+                    <div class="modal__close close-modal" title="Close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <h1 class="modal__title">Авторизация</h1>
+                    <div class="auth-modal">
+<form method="POST" action="/auth/login">
+<input type="hidden" name="_token" value="6FCyZygg9rdm3POwI0mUuu60YPIIUSvHChCZz9fc">
+<div class="group">
+<input name="name" required="" placeholder="Логин" type="text">
+</div>
+<div class="group">
+<input name="password" required="" placeholder="Пароль" type="password">
+</div>
+<div class="flex">
+<button type="submit" class="auth">
+Войти
+</button>
+<div class="social" onclick="window.location='https://vk.com'">
+<span>ИЛИ</span>
+<a class="vk">
+<svg><path d="M11.5 24h1c5.44 0 8.15 0 9.83-1.68C24 20.64 24 17.92 24 12.5v-1.02c0-5.4 0-8.12-1.67-9.8C20.65 0 17.93 0 12.5 0h-1C6.06 0 3.35 0 1.67 1.68 0 3.36 0 6.08 0 11.5v1.02c0 5.4 0 8.12 1.68 9.8C3.36 24 6.08 24 11.5 24z" fill="#07F"></path><path d="M12.77 17.29c-5.47 0-8.59-3.75-8.72-9.99h2.74c.09 4.58 2.11 6.52 3.71 6.92V7.3h2.58v3.95c1.58-.17 3.24-1.97 3.8-3.95h2.58a7.62 7.62 0 01-3.51 4.98 7.9 7.9 0 014.11 5.01h-2.84a4.94 4.94 0 00-4.14-3.57v3.57h-.31z" fill="#fff"></path></svg>
+</a>
+</div>
+</div>
+</form>
+<div class="description">
+Ещё нет аккаунта ?
+</div>
+<button class="warning">Создать аккаунт</button>
+</div>
+                </div>
+            </div>
+        </section>
+		
+		
+<section class="withdraw-section">
+
+<div class="withdraw-page">
+<div class="withdraw" id="wbpage">
+<div class="block">
+<div class="group">
+<label>
+Всего
+</label>
+<div class="title">
+0 000,00 <i class="far fa-wallet"></i>
+</div>
+</div>
+
+</div>
+<div class="block">
+<div class="group">
+<select class="wide">
+<option value="qiwi">Qiwi</option>
+<option value="ps_wallet">Piastrix Wallet</option>
+<option value="fk_wallet">FreeKassa Wallet</option>
+</select>
+</div>
+<div class="group">
+<label>Номер счёта</label>
+<div class="input">
+<span><i class="far fa-credit-card-front"></i></span>
+<input data-withdraw="number" type="text" placeholder="Введите номер счёта">
+</div>
+</div>
+<div class="group">
+<label>Сумма вывода средств</label>
+<div class="input">
+<span><i class="far fa-wallet"></i></span>
+<input data-withdraw="amount" type="text" placeholder="0.00">
+</div>
+</div>
+<button>Вывести средства</button>
+</div>
+<div class="block">
+<div class="info">
+Минимальная сумма<br>
+вывода 100.00<i class="far fa-wallet"></i><br><br>
+Деньги спишутся сосчета <br>в момент выплаты
+заявки.
+<br><br>
+Вывод средство существляется теми же платежными методами, <br>с которых вы вводили деньги в систему
+</div>
+</div>
+</div>
+<div class="withdraw-history">
+<div class="title">
+История
+</div>
+<div class="table">
+<div class="head">
+<span>ID</span>
+<span>Система</span>
+<span>Кошелёк</span>
+<span>Время</span>
+<span>Статус</span>
+</div>
+<div class="games">
+<div class="game">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+		
+		<div class="footer" style="margin-top: 25px;">
+<div class="main">
+<span class="domain">
+LikeGo - 2022
+</span>
+<div class="menu">
+<a href="terms.html" class="">
+Пользовательское соглашение
+</a>
+<a href="policy.html" class="">
+ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+</a>
+<a href="https://vk.com/#">
+ТЕХНИЧЕСКАЯ ПОДДЕРЖКА
+</a>
+</div>
+</div>
+</div>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
