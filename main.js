@@ -1,3 +1,4 @@
+/*===== EXPANDER MENU  =====*/ 
 const showMenu = (toggleId, navId)=>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -41,7 +42,6 @@ const closeBtn = document.querySelectorAll('.close-modal')
 const body = document.querySelector("body")
 
 function closeModal(){
-    const body = document.querySelector("body")
     const modalContainer = document.getElementById('modal-container')
     modalContainer.classList.remove('show-modal')
 	body.classList.remove('activeb')
